@@ -41,21 +41,6 @@
 
 
 
-
-.hero {
-     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('https://picsum.photos/1200/600?grayscale');
-     background-size: cover;
-     background-position: center;
-     height: 500px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-   }
-
-.hero-content {
-text-align: center;
-max-width: 600px;
-}
 .text-4xl{font-size:2.25rem;line-height:2.5rem}
 .mb-4{margin-bottom:1rem}
 .mb-6{margin-bottom:1.5rem}
@@ -81,23 +66,39 @@ transition: transform 0.3s ease-in-out;
 .bg-gray-800{--tw-bg-opacity:1;background-color:rgba(31,41,55,var(--tw-bg-opacity))}
 .text-white{--tw-text-opacity:1;color:rgba(255,255,255,var(--tw-text-opacity))}
 
+.img {
+     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8)), url('https://picsum.photos/1200/600?grayscale');
+     background-size: cover;
+     background-position: center;
+     height: 500px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.img-content {
+     text-align: center;
+     max-width: 600px;
+}
+
 
 body {
      background-color:rgba(243,244,246)
 }
 
 header {
+     border-bottom: 0.1rem solid black;
      background-color:rgba(255,255,255);
-     box-shadow: 1px 1px 3px 0px black;
      margin-left: auto;
      margin-right: auto;
 }
 
 .nadpis {
-     font-size:1.6rem;
-     line-height:1.75rem;
+     font-size:1.7rem;
      font-weight:700;
-     color:rgba(220,38,38)
+     padding-left: 1.5rem;
+     color:rgba(220,38,38);
+     text-decoration: none;
 }
 
 .container {
@@ -107,8 +108,6 @@ header {
 nav {
      margin-left: auto;
      margin-right: auto;
-     padding-left: 1rem;
-     padding-right: 1rem;
      padding-top: 0.75rem;
      padding-bottom: 0.75rem;
      display:flex;
@@ -118,7 +117,34 @@ nav {
 
 header nav ul {
      display:flex;
-     align-items:center;
+     list-style-type: none; 
+     margin: 0; 
+     gap: 2rem;
+     padding-right: 1.5rem;
+     
+}
+
+header nav ul li a{
+     color:rgba(55,65,81);
+     text-decoration: none;
+     font-size: 1.2rem;
+     transition: all 0.3s ease;
+     display: inline-block;
+     margin: 0;
+     padding: 0;
+}
+
+header nav ul li:hover a{
+     color:rgba(220,38,38);
+     text-decoration: underline;
+     transform: scale(1.08);
+}
+
+main {
+     align-items: center;
+     margin-left: auto;
+     margin-right: auto;
+     padding: 1rem;
 }
 
 
@@ -128,28 +154,14 @@ header nav ul {
 
 
 
-@media (min-width:640px){
+
+@media (min-width:600px){
      .container {
-          max-width:640px
+          max-width:600px
      }
 }
-@media (min-width:768px){
+@media (min-width:950px){
      .container {
-          max-width:768px
-     }
-}
-@media (min-width:1024px){
-     .container {
-          max-width:1024px
-     }
-}
-@media (min-width:1280px){
-     .container {
-          max-width:1280px
-     }
-}
-@media (min-width:1536px){
-     .container {
-          max-width:1536px
+          max-width:950px
      }
 }
