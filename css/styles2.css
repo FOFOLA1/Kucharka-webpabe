@@ -184,8 +184,81 @@ main {
      margin-bottom:1.5rem
 }
 
+.recommended {
+     display:grid;
+     gap:1.5rem;
+}
 
+.recommended div {
+     background-color:rgba(255,255,255);
+     border-radius:0.5rem;
+     overflow:hidden;
+}
 
+.recommended div img {
+     width:100%;
+     height:12rem;
+     object-fit:cover;
+}
+
+.recommended div div {
+     padding:1rem;
+}
+
+.recommended div div h3 {
+     font-size:1.25rem;
+     line-height:1.75rem;
+     font-weight:700;
+     color:rgba(220,38,38);
+     margin-bottom: 0.5rem;
+}
+
+.recommended div div p {
+     color:rgba(55,65,81);
+}
+
+footer {
+     background-color:rgba(31,41,55);
+     color:rgba(255,255,255);
+     padding-top:2rem;
+     padding-bottom:2rem;
+}
+
+footer .container {
+     margin-left:auto;
+     margin-right:auto;
+     padding-left:1rem;
+     padding-right:1rem;
+     display:flex;
+     flex-direction:column;
+     align-items:center;
+     justify-content:space-between
+}
+
+footer div.container div h4 {
+     margin-bottom: 0.5rem;
+     font-weight:700;
+     font-size:1.125rem;
+     line-height:1.75rem;
+     text-align: center;
+}
+
+footer div.container div {
+     margin-top: 1rem;
+}
+
+footer div.container > div {
+     margin-top: 0px;
+}
+
+footer div.container div p {
+     font-size: 0.875rem;
+     line-height:1.25rem;
+}
+
+footer div.container div ul {
+     display: flex;
+}
 
 
 
