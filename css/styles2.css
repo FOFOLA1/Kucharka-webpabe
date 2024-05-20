@@ -230,9 +230,10 @@ footer .container {
      padding-left:1rem;
      padding-right:1rem;
      display:flex;
-     flex-direction:column;
+     flex-direction:row;
+     
      align-items:center;
-     justify-content:space-between
+     justify-content:space-evenly;
 }
 
 footer div.container div h4 {
@@ -242,6 +243,7 @@ footer div.container div h4 {
      line-height:1.75rem;
      text-align: center;
 }
+
 
 footer div.container div {
      margin-top: 1rem;
@@ -258,6 +260,23 @@ footer div.container div p {
 
 footer div.container div ul {
      display: flex;
+     text-decoration: none;
+     flex-direction: column;
+}
+
+footer div.container div ul li {
+     color:rgba(220,38,38);
+     
+}
+
+footer div.container div ul li a img {
+     max-width: 1.5em;
+     padding: 3px;
+     
+}
+
+footer div.container div ul li:hover {
+     color:rgba(255,255,255);
 }
 
 
@@ -271,6 +290,6 @@ footer div.container div ul {
 }
 @media (min-width:950px){
      .container {
-          max-width:950px
+          max-width:1250px
      }
 }
