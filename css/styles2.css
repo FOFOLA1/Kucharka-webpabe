@@ -67,6 +67,10 @@ transition: transform 0.3s ease-in-out;
 .bg-gray-800{--tw-bg-opacity:1;background-color:rgba(31,41,55,var(--tw-bg-opacity))}
 .text-white{--tw-text-opacity:1;color:rgba(255,255,255,var(--tw-text-opacity))}
 
+* {
+     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .img {
      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('https://picsum.photos/1200/600?grayscale');
      background-size: cover;
@@ -106,6 +110,7 @@ header {
 
 .container {
      width: 100%;
+     align-items: center;
 }
 
 nav {
@@ -181,18 +186,23 @@ main {
      font-size:1.875rem;line-height:2.25rem;
      font-weight:700;
      color:rgba(220,38,38);
-     margin-bottom:1.5rem
+     margin-bottom:1.5rem;
+     margin-top: 3rem;
 }
 
 .recommended {
-     display:grid;
+     display:flex;
+     flex-wrap: wrap;
      gap:1.5rem;
+     justify-content: center;
 }
 
 .recommended div {
      background-color:rgba(255,255,255);
      border-radius:0.5rem;
      overflow:hidden;
+     max-width: 400px;
+     height: auto;
 }
 
 .recommended div img {
@@ -203,6 +213,7 @@ main {
 
 .recommended div div {
      padding:1rem;
+     align-items:flex-start;
 }
 
 .recommended div div h3 {
@@ -221,10 +232,10 @@ footer {
      background-color:rgba(31,41,55);
      color:rgba(255,255,255);
      padding-top:2rem;
-     padding-bottom:2rem;
+     padding-bottom:0;
 }
 
-footer .container {
+footer div.container {
      margin-left:auto;
      margin-right:auto;
      padding-left:1rem;
@@ -232,51 +243,74 @@ footer .container {
      display:flex;
      flex-direction:row;
      
-     align-items:center;
+     align-items: flex-start;
      justify-content:space-evenly;
+     flex-wrap: wrap;
 }
 
 footer div.container div h4 {
      margin-bottom: 0.5rem;
      font-weight:700;
-     font-size:1.125rem;
+     font-size:1.3rem;
      line-height:1.75rem;
-     text-align: center;
+     text-align: left;
 }
 
 
 footer div.container div {
-     margin-top: 1rem;
+     margin: 2rem;
+     align-items: left;
 }
 
-footer div.container > div {
-     margin-top: 0px;
-}
 
-footer div.container div p {
-     font-size: 0.875rem;
+footer div.container div p{
+     font-size: 1.3rem;
      line-height:1.25rem;
 }
 
 footer div.container div ul {
      display: flex;
-     text-decoration: none;
      flex-direction: column;
-}
-
-footer div.container div ul li {
-     color:rgba(220,38,38);
+     list-style-type: none;
+     padding-left: 0px;
+     justify-content: space-between;
      
 }
+
+
+footer div.container div ul li div{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     flex-flow: row;
+     align-items: center;
+     justify-content: space-between;
+     color:rgba(255,255,255);
+     font-size: 1.1rem;
+     margin: 0px;
+     margin-top: 13px;
+     max-height: 1.5em;     
+}
+
+footer div.container div ul li:hover div {
+     color:rgb(255, 79, 79);
+     text-decoration: underline;
+}
+
 
 footer div.container div ul li a img {
      max-width: 1.5em;
-     padding: 3px;
+     padding: 0px 0px 0px 10px;
      
 }
 
-footer div.container div ul li:hover {
-     color:rgba(255,255,255);
+footer div.container div ul li a {
+     text-decoration: none;
+}
+
+footer div.rights p {
+     margin-bottom: 0;
+     padding: 10px;
 }
 
 
@@ -285,11 +319,14 @@ footer div.container div ul li:hover {
 
 @media (min-width:600px){
      .container {
-          max-width:600px
+          max-width:600px;
      }
+     
+     
 }
 @media (min-width:950px){
      .container {
-          max-width:1250px
+          max-width:1250px;
+          
      }
 }
