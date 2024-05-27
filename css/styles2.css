@@ -244,7 +244,7 @@ footer div.container {
      flex-direction:row;
      
      align-items: flex-start;
-     justify-content:space-evenly;
+     justify-content:space-between;
      flex-wrap: wrap;
 }
 
@@ -264,7 +264,7 @@ footer div.container div {
 
 
 footer div.container div p{
-     font-size: 1.3rem;
+     font-size: 1.2rem;
      line-height:1.25rem;
 }
 
@@ -311,7 +311,10 @@ footer div.container div ul li a {
 footer div.rights p {
      margin-bottom: 0;
      padding: 10px;
+     text-align: right;
 }
+
+
 
 
 
