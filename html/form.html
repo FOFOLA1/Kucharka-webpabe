@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    
-    <title>Přidat recept - Kuchařská kniha</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuchařka</title>
+  <link href="../css/main.css" rel="stylesheet">
+
 </head>
 <body>
+  <header class="container">
     
+    <a href="../index.html" class="nadpis">Kuchařka</a>
+
+    <input type="checkbox" name="MenuCheck" id="Menu" value="Menu">
+    <label for="Menu">MENU</label>
+
+    <nav>
+      <ul>
+        <li><a href="recipes.html">Recepty</a></li>
+        <li><a href="form.html">Přidat recept</a></li>
+        <li><a href="about.html">O projektu</a></li>
+      </ul>
+    </nav>
+  </header>
     
     <main>
         <form class="recept-formular" action="#" method="post">
@@ -26,7 +43,33 @@
     </main>
     
     <footer>
-        
+        <div class="container">
+          <div>
+            <h4>Kuchařka</h4>
+            <p>Lorem ipsum dolor sit amet, consectet.</p>
+            <p>Sed auctor, magna vel bibendum bibendum.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div>
+            <h4>Sledujte nás</h4>
+            <ul>
+              <li><a href="https://www.instagram.com/"><div>Instagram<img src="../img/ig.png"></div></a></li>
+              <li><a href="https://www.youtube.com/"><div>YouTube<img src="../img/yt.png"></div></a></li>
+              <li><a href="https://www.facebook.com/"><div>Facebook<img src="../img/fb.png"></div></a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Kontakt</h4>
+            <ul>
+                <li><a href="../html/about.html"><div>Adresa</div></a></li>
+                <li><a href="../html/about.html"><div>Telefon</div></a></li>
+                <li><a href="../html/about.html"><div>Email</div></a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="rights">
+          <p>&copy; 2024 Filip Řeháček. Všechna práva vyhrazena</p>
+        </div>
     </footer>
-</body>
-</html>
+  </body>
+  </html>
