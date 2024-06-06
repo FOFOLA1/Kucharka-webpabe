@@ -12,6 +12,10 @@
      justify-content: center;
 }
 
+html {
+     width: 100%;
+}
+
 .img-content {
      text-align: center;
      max-width: 600px;
@@ -40,7 +44,7 @@ header {
      padding-top: 10px;
      font-size:1.7rem;
      font-weight:700;
-     padding-left: 1.5rem;
+     padding-left: 0;
      color:rgba(220,38,38);
      text-decoration: none;
      width: 100%;
@@ -75,13 +79,14 @@ input[type=checkbox]:checked + label + nav > ul {
 }
 
 nav {
-     margin-left: auto;
-     margin-right: auto;
      padding-top: 0.75rem;
      padding-bottom: 0.0rem;
      display:flex;
      align-items:center;
-     justify-content:space-between
+     justify-content:space-between;
+     margin:0;
+     width: 70%;
+     align-content: center;
 }
 
 header nav ul {
@@ -89,18 +94,22 @@ header nav ul {
      list-style-type: none; 
      margin: 0; 
      gap: 2rem;
-     padding-right: 1.5rem;
-     
+     padding: 0;
+     margin-left: auto;
+     align-items: center;
 }
 
 header nav ul li a{
      color:rgba(55,65,81);
      text-decoration: none;
-     font-size: 1.2rem;
+     font-size: 1.4rem;
+     line-height: 150%;
      transition: all 0.3s ease;
      display: inline-block;
      margin: 0;
      padding: 0;
+     width: 100%;
+     text-align: center;
 }
 
 header nav ul li:hover a{
@@ -113,7 +122,7 @@ main {
      align-items: center;
      margin-left: auto;
      margin-right: auto;
-     padding: 1rem;
+
 }
 
 .img-content h1 {
@@ -195,14 +204,15 @@ footer {
      background-color:rgba(31,41,55);
      color:rgba(255,255,255);
      padding-top:2rem;
-     padding-bottom:0;
+     padding: 0;
+
 }
 
 footer div.container {
      margin-left:auto;
      margin-right:auto;
-     padding-left:1rem;
-     padding-right:1rem;
+     padding-left:0px;
+     padding-right:0px;
      display:flex;
      flex-direction:row;
      
@@ -284,27 +294,76 @@ main.recept {
 
 main.recept h2 {
      text-wrap: wrap;
-     font-size:1.9rem;
+     font-size:1.8rem;
      line-height:1.75rem;
      font-weight:700;
      color:rgba(220,38,38);
-     margin: 20px 10px 30px 10px;
-     width: 100%;
+     margin: 20px 10px 15px 10px;
 }
 
 main.recept > div div.ingredience{
+     margin: 10px;
 }
 
-main.recept > div {
+main.recept > div:first-of-type {
+     display: flex;
+     flex-direction: column;
+}
+
+
+main.recept > div:first-of-type img {
+     border-radius: 1rem;
+     margin: 5px;
+     width: calc(100% - 10px);
+     height: auto;
+     align-self: center;
+}
+
+main.recept > div div.ingredience h3 {
+     margin: 0;
+     text-wrap: wrap;
+     font-size:1.6rem;
+     line-height:1.75rem;
+     font-weight:700;
+     color:rgba(220,38,38);
+}
+
+main.recept > div div.ingredience ul {
+     list-style:inside;
+     padding-left: 20px;
+}
+
+main.recept > div div.ingredience ul li {
+     padding-bottom: 10px;
+     font-size: 1.2rem;
+}
+
+
+main.recept > div.postup {
+     margin: 10px;
+}
+
+main.recept > div.postup h3 {
+     margin: 0;
+     text-wrap: wrap;
+     font-size:1.6rem;
+     line-height:1.75rem;
+     font-weight:700;
+     color:rgba(220,38,38);
+}
+
+main.recept > div.postup ol {
+     list-style: none;
+     padding-left: 20px;
      
 }
 
-
-main.recept > div img {
-     border-radius:0.5rem;
-     margin: 0px 0px 0px 10px;
-     z-index: 0;
+main.recept > div.postup ol li {
+     padding-bottom: 10px;
+     font-size: 1.2rem;
+     line-height: 120%;
 }
+
 
 
 
@@ -322,9 +381,11 @@ main.recept > div img {
           flex-wrap: nowrap;
           flex-direction: row;
           justify-content: space-between;
+          align-items: center;
      }
 
      .nadpis {
+          padding-left: 20px;
           padding-bottom: 10px;
           width: auto;
           text-align: left;
@@ -342,6 +403,8 @@ main.recept > div img {
      
      header nav ul {
           display:flex;
+          padding-right: 1.5rem;
+
      }
 
      input[type=checkbox]:checked + label + nav > ul {
@@ -350,6 +413,20 @@ main.recept > div img {
 
      body header label {
           display: none;
+     }
+
+     footer {
+          padding-top: 20px;
+     }
+
+     main.recept > div:first-of-type {
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          
+     }
+
+     main.recept > div:first-of-type img {
+          max-width: 50%;
      }
 
      
@@ -371,13 +448,14 @@ main.recept > div img {
      }
 
      .nadpis {
+          padding-left: 20px;
           padding-bottom: 10px;
           width: auto;
           text-align: left;
      }
 
      nav {
-          margin-left: 0;
+          margin-left:auto;
           margin-right: 0;
           padding-top: 0.75rem;
           padding-bottom: 0.75rem;
@@ -388,6 +466,8 @@ main.recept > div img {
      
      header nav ul {
           display:flex;
+          padding-right: 1.5rem;
+
      }
 
      input[type=checkbox]:checked + label + nav > ul {
@@ -396,5 +476,9 @@ main.recept > div img {
 
      body header label {
           display: none;
+     }
+
+     footer {
+          padding-top: 20px;
      }
 }
