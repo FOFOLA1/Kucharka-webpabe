@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kuchařka</title>
+  <title>Kuchařka - Přidat recept</title>
   <link href="../css/main.css" rel="stylesheet">
 
 </head>
@@ -24,19 +24,16 @@
     </nav>
   </header>
     
-    <main>
-        <form class="recept-formular" action="#" method="post">
-           <label for="nazev">Název receptu:</label>
-            <input type="text" id="nazev" name="nazev" required>
+    <main class="container">
+        <form class="formular" action="#" method="post">
+            <input type="text" id="nazev" name="nazev" placeholder="Název receptu" required>
             
             <label for="obrazek">Obrázek receptu:</label>
-            <input type="file" id="obrazek" name="obrazek" accept="image/*">
+            <input type="file" id="obrazek" name="obrazek" accept="image/*" required>
             
-            <label for="ingredience">Ingredience:</label>
-            <textarea id="ingredience" name="ingredience" rows="4" cols="50" required></textarea>
+            <textarea id="ingredience" name="ingredience" rows="10" cols="50" placeholder="Ingredience (jednotlivé body oddělte klávesou Enter)" required></textarea>
             
-            <label for="postup">Postup:</label>
-            <textarea id="postup" name="postup" rows="4" cols="50" required></textarea>
+            <textarea id="postup" name="postup" rows="10" cols="50" placeholder="Postup (jednotlivé body oddělte klávesou Enter)" required></textarea>
             
             <button type="submit">Přidat recept</button>
         </form>
@@ -51,7 +48,7 @@
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
           <div>
-            <h4>Sledujte nás</h4>
+            <a href="about.html#site"><h4>Sledujte nás</h4></a>
             <ul>
               <li><a href="https://www.instagram.com/"><div>Instagram<img src="../img/ig.png"></div></a></li>
               <li><a href="https://www.youtube.com/"><div>YouTube<img src="../img/yt.png"></div></a></li>
@@ -59,11 +56,11 @@
             </ul>
           </div>
           <div>
-            <h4>Kontakt</h4>
+            <a href="about.html#kontakty"><h4>Kontakt</h4></a>
             <ul>
-                <li><a href="../html/about.html"><div>Adresa</div></a></li>
-                <li><a href="../html/about.html"><div>Telefon</div></a></li>
-                <li><a href="../html/about.html"><div>Email</div></a></li>
+                <li><a href="../html/about.html#kontakty"><div>Adresa</div></a></li>
+                <li><a href="../html/about.html#kontakty"><div>Telefon</div></a></li>
+                <li><a href="../html/about.html#kontakty"><div>Email</div></a></li>
               </ul>
           </div>
         </div>
