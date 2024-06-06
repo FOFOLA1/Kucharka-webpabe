@@ -545,7 +545,7 @@ main.about div.reviews > div {
      justify-content:flex-start;
      border: 3px solid rgb(221, 100, 100);
      background-color: rgb(255, 255, 255);
-     border-radius: 50px;
+     border-radius: 55px;
      max-width: 500px;
      
 }
@@ -555,18 +555,22 @@ main.about div.reviews > div img {
      width: 100px;
      height: 100px;
      border-radius: 50px;
+     border: 3px solid rgb(221, 100, 100);
 }
 
 main.about div.reviews > div div h4 {
      font-size: 1.3rem;
      color: rgba(220,38,38);
      margin: 7px 0 0 0;
+     padding: 2px 0 0 13px;
 }
 
 main.about div.reviews > div div p {
      font-size: 1.2rem;
      color: rgba(220,38,38);
      margin: 5px 0 0 0;
+     max-width: 360px;
+     padding: 0 0 12px 13px;
 }
 
 
