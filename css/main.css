@@ -569,15 +569,15 @@ main.about div.reviews h3 {
 }
 
 main.about div.reviews > div {
-     margin: 10px 5px 5px 5px;
      display: flex;
      flex-direction: row;
      justify-content:flex-start;
      border: 3px solid rgb(221, 100, 100);
      background-color: rgb(255, 255, 255);
      border-radius: 55px;
-     max-width: 500px;
-     
+     max-width: none;
+     width: calc(100%-10px);
+     margin: 5px 0 5px 0;
 }
 
 main.about div.reviews > div img {
@@ -589,18 +589,25 @@ main.about div.reviews > div img {
      margin: -1px;
 }
 
+
 main.about div.reviews > div div h4 {
      font-size: 1.3rem;
      color: rgba(220,38,38);
      margin: 7px 0 0 0;
      padding: 2px 0 0 13px;
+     width: 100%;
 }
+
+main.about div.reviews > div div {
+     width: calc(100% - 120px);
+}
+
 
 main.about div.reviews > div div p {
      font-size: 1.2rem;
      color: rgba(220,38,38);
      margin: 5px 0 0 0;
-     max-width: 360px;
+     width: 100%;
      padding: 0 0 12px 13px;
 }
 
@@ -717,6 +724,28 @@ main.recs > div:last-of-type {
           margin-left: 10px;
           margin-right: auto;
           width: 55%;
+     }
+
+     main.about div.reviews > div {
+          max-width: 600px;
+          width: fit-content;
+          margin: 10px 5px 5px 5px;
+     }
+
+     main.about div.reviews > div div h4 {
+          width: fit-content;
+          padding: 2px 0 0 15px;
+     }
+
+     main.about div.reviews > div div {
+          width: fit-content;
+          max-width: calc(100% - 120px);
+     }
+
+     main.about div.reviews > div div p {
+          max-width: 455px;
+          width: fit-content;
+          padding: 0 0 12px 15px;
      }
      
      
